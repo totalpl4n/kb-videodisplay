@@ -61,10 +61,12 @@ Formula for your video's optimal frame rate: <br>
 ### 3. Read the disclaimers displayed before continuing.
 The program will display the disclaimers as follows:
 ```
-Please ensure that the *frame* folder is completely clear before running the program, since it could cause problems later.
+Please ensure that the "frame" folder is completely clear before running the program, since it could cause problems later.
 Please also ensure that ffmpeg has been installed. Learn how to install it in README.md.
 ```
 Once you've ensured that both of these conditions have been met, press any key to start running the conversion program. This will convert your input video into 16x8 monochrome frames, ready to be processed by the next script.
+
+**Reminder:** If this is your first time running the script, please delete the file titled *DELETEME* in the *frame* folder before pressing a key to continue.
 
 ### 4. Run *frame-to-text.py*.
 Run the python script with the name *frame-to-text.py*. Once prompted, press enter to start the process. This will convert each frame of the video into bytes, which we will use in the main script that will be uploaded to the board. After the processing is done, copy everything between the two messages at the start and end. Once you've copied it, close the script.
@@ -76,3 +78,7 @@ Open up MicroBlock IDE, click on *File* in the top left corner, then *Open*. Fin
 Once you've pasted in all of the variables, plug in your board with a USB cable, and click on the big upload button at the bottom center. 
 
 After you've finished uploading, you can press *S1* on your board to play your video.
+
+
+## Example Files
+In the *examplefiles* folder, there are a few .mby files to test out different videos. To run them, follow steps *5* and *6*, without changing any variables.
