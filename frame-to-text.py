@@ -52,7 +52,8 @@ while True:
                 final = str(final + r'\x' + byte)
         final = str(final + '"')
         if i < frames-1:
-            final = str(final + ', ')
+            final = str(final + ',')
     final = str(final + "]")
     print (final)
     print("^^^^^^^ | Copy everything above until the other copy message | ^^^^^^^")
+
