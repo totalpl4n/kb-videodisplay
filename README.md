@@ -42,9 +42,11 @@ Once you've finished the installation, and you've downloaded the files provided,
 Once you have a video of your choice, preferably one that is 1-bit monochrome, paste it into the current folder containing these files.
 
 ### 2. Run *video-to-frames.bat*.
-After pasting in the video file, run the script called *video-to-frames.bat* and input the name of the video from step 1, including its file extension. Then, input the final video's frame rate (without putting *fps*).  The frame count limit is 720. Here is a table for a video's optimal frame rate for its length.
+After pasting in the video file, run the script called *video-to-frames.bat* and input the name of the video from step 1, including its file extension. Then, input the final video's frame rate (without putting *fps*).  The frame count limit is 720. Here is a table for a video's **maximum** frame rate for its length.
 | Video Length | Frame Rate |
 | --- | ----------- |
+| < 12 seconds | 60 fps |
+| < 24 seconds | 30 fps |
 | < 30 seconds | 24 fps |
 | < 1 minute | 12 fps |
 | < 2 minutes | 6 fps |
