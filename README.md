@@ -1,5 +1,5 @@
 # kb-videodisplay
-Play videos on a 16x8 matrix display. Optimized for the KidBright 32iA.
+Play videos on a 16x8 matrix display. Optimized for the KidBright 32iA. This repository has been optimized for use on Windows only.
 
 
 ## Required Installations
@@ -28,10 +28,10 @@ Installation can be done with the files provided.
 <details>
  <summary>Tutorial</summary>
  
- 1. Run *module-installation.bat* and confirm by pressing any key.
- 2. After the first part finishes running, copy the path specified near the end, and add it to the *Path* system variable.
+ 1. Run *pip-installation.bat* and confirm by pressing any key.
+ 2. After it finishes running, copy the path specified near the end, and add it to the *Path* system variable.
  See how to do it [here.](https://www.youtube.com/watch?v=TqE4jBH4Me4&t=155s)
- 3. Press any key, and let the modules finish being installed. When the program closes automatically, the installation is complete.
+ 3. Press any key to close the program, then run *module-installation.bat*. Make sure you've added the path to the system variable, then press any key to start installing the python modules.
 </details>
 
 
