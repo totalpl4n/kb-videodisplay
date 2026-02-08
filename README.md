@@ -53,7 +53,7 @@ After pasting in the video file, run the script called *video-to-frames.bat* and
 | < 6 minutes | 2 fps |
 | < 12 minutes | 1 fps|
 
-Formula for your video's optimal frame rate: <br>
+Formula for a video maximum frame rate: <br>
 ```
 720 / your video's length in seconds
 ```
@@ -71,8 +71,13 @@ Once you've ensured that both of these conditions have been met, press any key t
 ### 4. Run *frame-to-text.py*.
 Run the python script with the name *frame-to-text.py*. Once prompted, press enter to start the process. This will convert each frame of the video into bytes, which we will use in the main script that will be uploaded to the board. After the processing is done, copy everything between the two messages at the start and end. Once you've copied it, close the script.
 
+**In case the script fails to run:** In the program's folder, type *cmd* into the directory at the top center. Then, type this command to run the script:
+```
+python frame-to-text.py
+```
+
 ### 5. Open *run.mby* on MicroBlock IDE.
-Open up MicroBlock IDE, click on *File* in the top left corner, then *Open*. Find run.mby in this folder, then open it. Click on *Code* mode at the top center, and paste in what you previoucly copied from step 4 into the variable *frames*. Then, put your frame rate from step 2 into the variable *framerate*.
+Open up MicroBlock IDE, click on *File* in the top left corner, then *Open*. Find run.mby in this folder, then open it. Paste in what you previoucly copied from step 4 into the variable *frames*. Then, put your frame rate from step 2 into the variable *framerate*.
 
 ### 6. Upload the code onto the board.
 Once you've pasted in all of the variables, plug in your board with a USB cable, and click on the big upload button at the bottom center. 
