@@ -55,7 +55,7 @@ After pasting in the video file, run the script called *video-to-frames.bat* and
 | < 6 minutes | 2 fps |
 | < 12 minutes | 1 fps|
 
-Formula for a video maximum frame rate: <br>
+Formula for a video's **maximum** frame rate: <br>
 ```
 720 / your video's length in seconds
 ```
