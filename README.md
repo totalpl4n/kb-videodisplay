@@ -1,5 +1,5 @@
 # kb-videodisplay
-Play videos on a 16x8 matrix display. Optimized for the KidBright 32iA. This repository has been optimized for use on Windows only.
+Play videos on a 16x8 matrix display. Optimized for the KidBright 32iA. This program has been optimized for use on Windows only. Support for other operating systems will be added in the near future.
 
 
 ## Required Installations
@@ -41,9 +41,11 @@ Once you've finished the installation, and you've downloaded the files provided,
 ### 1. Paste your input video into this folder.
 Once you have a video of your choice, preferably one that is 1-bit monochrome, paste it into the current folder containing these files.
 
+**Inportant:** Make your your input video has been cropped to an aspect ratio to 2:1 or 16:9 (preferably 2:1, as 16:9 will give a slightly stretched output), otherwise the output may look stretched or squeezed. You can crop the video to the previously mentioned aspect ratios with most video editors.
+
 ### 2. Run *video-to-frames.bat*.
 After pasting in the video file, run the script called *video-to-frames.bat* and input the name of the video from step 1, including its file extension. Then, input the final video's frame rate (without putting *fps*).  The frame count limit is 720. Here is a table for a video's **maximum** frame rate for its length.
-| Video Length | Frame Rate |
+| Video Length | Max. Frame Rate |
 | --- | ----------- |
 | < 12 seconds | 60 fps |
 | < 24 seconds | 30 fps |
@@ -68,12 +70,12 @@ Please also ensure that ffmpeg has been installed. Learn how to install it in RE
 ```
 Once you've ensured that both of these conditions have been met, press any key to start running the conversion program. This will convert your input video into 16x8 monochrome frames, ready to be processed by the next script.
 
-**Reminder:** If this is your first time running the script, please delete the file titled *DELETEME* in the *frame* folder before pressing a key to continue.
+**Reminder:** If this is your first time running the script, please delete the file titled *DELETEME* in the *frame* folder before continuing.
 
 ### 4. Run *frame-to-text.py*.
 Run the python script with the name *frame-to-text.py*. Once prompted, press enter to start the process. This will convert each frame of the video into bytes, which we will use in the main script that will be uploaded to the board. After the processing is done, copy everything between the two messages at the start and end. Once you've copied it, close the script.
 
-**In case the script fails to run:** In the program's folder, type *cmd* into the directory at the top center. Then, type this command to run the script:
+**In case the script fails to run:** In the program's folder on File Explorer, type *cmd* into the directory at the top center. Then, type this command to run the script:
 ```
 python frame-to-text.py
 ```
@@ -88,4 +90,4 @@ After you've finished uploading, you can press *S1* on your board to play your v
 
 
 ## Example Files
-In the *examplefiles* folder, there are a few .mby files to test out different videos. To run them, follow steps *5* and *6*, without changing any variables.
+In the *examplefiles* folder, there are a few .mby files to test out different outputs on your board. To run them, follow steps *5* and *6*, without changing any variables in the file.
